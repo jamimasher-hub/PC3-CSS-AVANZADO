@@ -1,0 +1,346 @@
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #fdf8f3;
+    overflow-x: hidden;
+}
+
+.loader-pantalla {
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(135deg, #212529, #3d2a1a);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    animation-name: ocultar;
+    animation-duration: 0.6s;
+    animation-delay: 2s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.loader {
+    width: 60px;
+    height: 60px;
+    border: 6px solid #495057;
+    border-top-color: #fd7e14;
+    border-right-color: #ffc107;
+    border-radius: 50%;
+    animation-name: girar;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes ocultar {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.logo {
+    font-weight: bold;
+}
+
+.logo span {
+    color: #fd7e14;
+}
+
+.nav-link {
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffc107 !important;
+}
+
+.inicio {
+    background: linear-gradient(135deg, #212529 40%, #7a3e0c);
+    color: #ffffff;
+    padding: 90px 0;
+    overflow: hidden;
+}
+
+.etiqueta {
+    display: inline-block;
+    background-color: rgba(253, 126, 20, 0.2);
+    color: #ffc107;
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.titulo-animado {
+    font-weight: bold;
+    font-size: 2.8rem;
+    animation-name: deslizar;
+    animation-duration: 1.2s;
+    animation-delay: 2.4s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+.titulo-animado span {
+    color: #fd7e14;
+}
+
+.texto-animado {
+    font-size: 1.1rem;
+    color: #dee2e6;
+    animation-name: deslizar;
+    animation-duration: 1.2s;
+    animation-delay: 2.8s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+@keyframes deslizar {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.circulo-latido {
+    width: 170px;
+    height: 170px;
+    margin: 40px auto 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #ffffff;
+    box-shadow: 0 0 30px rgba(253, 126, 20, 0.6);
+    animation-name: latido;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes latido {
+    0% {
+        background-color: #fd7e14;
+        transform: scale(1);
+    }
+    50% {
+        background-color: #ffc107;
+    }
+    100% {
+        background-color: #0d6efd;
+        transform: scale(1.15);
+    }
+}
+
+.numeros {
+    background: linear-gradient(90deg, #fd7e14, #ffc107);
+    color: #212529;
+}
+
+.numeros h3 {
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.numeros p {
+    margin: 0;
+}
+
+.titulo-seccion {
+    font-weight: bold;
+    color: #212529;
+}
+
+.titulo-seccion::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #fd7e14;
+    margin: 10px auto 0;
+}
+
+.nosotros .titulo-seccion {
+    color: #ffffff;
+}
+
+.nosotros .titulo-seccion::after {
+    margin-left: 0;
+}
+
+.caja {
+    height: 100%;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    -webkit-transition: transform 0.5s ease, box-shadow 0.5s ease;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.caja:hover {
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.icono {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.caja-rotar {
+    background-color: #fff3cd;
+    border-top: 6px solid #ffc107;
+}
+
+.caja-escalar {
+    background-color: #d1e7dd;
+    border-top: 6px solid #198754;
+}
+
+.caja-trasladar {
+    background-color: #cfe2ff;
+    border-top: 6px solid #0d6efd;
+}
+
+.caja-rotar:hover {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
+
+.caja-escalar:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.caja-trasladar:hover {
+    -webkit-transform: translateY(-15px) skewX(-5deg);
+    transform: translateY(-15px) skewX(-5deg);
+}
+
+.nosotros {
+    background-color: #212529;
+    color: #ffffff;
+}
+
+.lista li {
+    margin-bottom: 8px;
+}
+
+.lista li::marker {
+    color: #fd7e14;
+}
+
+.escena {
+    width: 100%;
+    max-width: 320px;
+    height: 220px;
+    margin: 0 auto;
+    perspective: 800px;
+}
+
+.tarjeta-3d {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1s ease;
+}
+
+.escena:hover .tarjeta-3d {
+    transform: rotateX(10deg) rotateY(180deg);
+}
+
+.cara {
+    position: absolute;
+    inset: 0;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.1rem;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.frente {
+    background: linear-gradient(135deg, #fd7e14, #dc3545);
+}
+
+.atras {
+    background: linear-gradient(135deg, #0d6efd, #6f42c1);
+    transform: rotateY(180deg);
+}
+
+.paso {
+    background-color: #ffffff;
+    border: 2px solid #fd7e14;
+    border-radius: 10px;
+    padding: 20px 10px;
+    font-weight: bold;
+    color: #7a3e0c;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+.paso:hover {
+    background-color: #fd7e14;
+    color: #ffffff;
+}
+
+.contacto {
+    background-color: #fff3e6;
+}
+
+.info {
+    height: 100%;
+    background: linear-gradient(135deg, #212529, #7a3e0c);
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.info h4 {
+    color: #ffc107;
+}
+
+.formulario {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-control:focus {
+    border-color: #fd7e14;
+    box-shadow: 0 0 0 0.2rem rgba(253, 126, 20, 0.25);
+}
+
+@media (max-width: 576px) {
+    .titulo-animado {
+        font-size: 2rem;
+    }
+}

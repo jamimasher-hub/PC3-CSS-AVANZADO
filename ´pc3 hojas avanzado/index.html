@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRG Construmet | Portafolio Interactivo</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="loader-pantalla">
+        <div class="loader"></div>
+        <p>Cargando...</p>
+    </div>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand logo" href="#inicio">HRG <span>Construmet</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="inicio" class="inicio">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-md-7">
+                    <span class="etiqueta">Metalmecánica industrial</span>
+                    <h1 class="titulo-animado">Estructuras metálicas para la <span>minería</span></h1>
+                    <p class="texto-animado">Fabricamos estructuras, tolvas, barandas y rejas de acero con calidad industrial para todo el Perú.</p>
+                    <a href="#contacto" class="btn btn-warning btn-lg me-2 mb-2">Cotiza aquí</a>
+                    <a href="#proyectos" class="btn btn-outline-light btn-lg mb-2">Ver proyectos</a>
+                </div>
+                <div class="col-sm-12 col-md-5 text-center">
+                    <div class="circulo-latido">HRG</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="numeros py-4">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-6 col-md-3 py-2">
+                    <h3>+10</h3>
+                    <p>Años de experiencia</p>
+                </div>
+                <div class="col-6 col-md-3 py-2">
+                    <h3>+100</h3>
+                    <p>Proyectos entregados</p>
+                </div>
+                <div class="col-6 col-md-3 py-2">
+                    <h3>5</h3>
+                    <p>Regiones atendidas</p>
+                </div>
+                <div class="col-6 col-md-3 py-2">
+                    <h3>100%</h3>
+                    <p>Acero de calidad</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="py-5">
+        <div class="container">
+            <h2 class="titulo-seccion text-center">Nuestros Proyectos</h2>
+            <p class="text-center text-muted mb-5">Pasa el mouse sobre cada caja</p>
+            <div class="row g-4">
+                <div class="col-sm-12 col-md-4">
+                    <div class="caja caja-rotar">
+                        <div class="icono">🏗️</div>
+                        <h3>Estructuras</h3>
+                        <p>Naves y soportes de acero para plantas mineras.</p>
+                        <span class="badge bg-warning text-dark">Rotate</span>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="caja caja-escalar">
+                        <div class="icono">⛏️</div>
+                        <h3>Tolvas</h3>
+                        <p>Tolvas resistentes para el almacenamiento de mineral.</p>
+                        <span class="badge bg-success">Scale</span>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="caja caja-trasladar">
+                        <div class="icono">🚧</div>
+                        <h3>Barandas y Rejas</h3>
+                        <p>Protección y seguridad para zonas de trabajo.</p>
+                        <span class="badge bg-primary">Translate + Skew</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="nosotros py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-md-6 mb-4">
+                    <h2 class="titulo-seccion">¿Quiénes somos?</h2>
+                    <p>HRG Construmet es una empresa metalmecánica peruana que trabaja con empresas mineras de Arequipa, La Libertad, Moquegua, Cajamarca y Junín.</p>
+                    <ul class="lista">
+                        <li>Trabajo seguro y responsable</li>
+                        <li>Materiales de primera calidad</li>
+                        <li>Entregas a tiempo</li>
+                    </ul>
+                    <p class="text-white-50">Pasa el mouse sobre la tarjeta para girarla.</p>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="escena">
+                        <div class="tarjeta-3d">
+                            <div class="cara frente">
+                                <h3>Misión</h3>
+                            </div>
+                            <div class="cara atras">
+                                <p>Fabricar soluciones metálicas seguras y de calidad para la industria.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="titulo-seccion text-center mb-5">Nuestro Proceso</h2>
+            <div class="row g-3 text-center">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="paso">1. Habilitación</div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="paso">2. Mecanizado</div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="paso">3. Soldadura</div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="paso">4. Pintura</div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="paso">5. Ensamblaje</div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="paso">6. Despacho</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contacto py-5">
+        <div class="container">
+            <h2 class="titulo-seccion text-center mb-5">Contáctanos</h2>
+            <div class="row">
+                <div class="col-sm-12 col-md-5 mb-4">
+                    <div class="info">
+                        <h4>¿Tienes un proyecto?</h4>
+                        <p>Escríbenos y te enviaremos una cotización sin compromiso.</p>
+                        <p><strong>Horario:</strong> Lunes a sábado, 8:00 am - 6:00 pm</p>
+                        <p><strong>Atendemos:</strong> Todo el Perú</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-7">
+                    <form class="formulario">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="correo@ejemplo.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje"></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                            <button type="reset" class="btn btn-secondary">Limpiar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p class="logo mb-1">HRG <span>Construmet</span></p>
+        <p class="mb-0 text-white-50">&copy; 2026 Todos los derechos reservados</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
